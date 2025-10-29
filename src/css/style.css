@@ -1,0 +1,29 @@
+body {
+    color: #999;
+}
+
+.mail {
+    display: flex;
+    padding: 10px;
+    border: 1px black solid;
+    border-bottom: 0;
+    justify-content: space-between;
+    max-width: 1440px;
+    background-color: aliceblue;
+}
+
+.ellipses {
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 0 0 40%;
+}
+
+.mail-from {
+    color: black;
+    flex: 0 0 30%;
+}
+
+.readed {
+    background-color: whitesmoke;
+}
