@@ -29,7 +29,7 @@ jobs:
           node-version: 22.14.0
           cache: 'npm'
       - run: npm
-      - run: npm lint
+      - run: npm run lint
 
   build:
     needs: [eslint]
@@ -47,7 +47,7 @@ jobs:
           node-version: 22.14.0
           cache: 'npm'
       - run: npm
-      - run: npm build
+      - run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
