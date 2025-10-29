@@ -1,4 +1,4 @@
-name: Netology rxjs
+name: Netology AHJ
 
 on:
   push:
@@ -27,9 +27,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22.14.0
-          cache: 'npm'
-      - run: npm i -D
-      - run: npm run lint
+          cache: 'yarn'
+      - run: yarn
+      - run: yarn lint
 
   build:
     needs: [eslint]
@@ -45,8 +45,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22.14.0
-          cache: 'npm'
-      - run: npm run build
+          cache: 'yarn'
+      - run: yarn
+      - run: yarn build
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
