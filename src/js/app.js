@@ -1,11 +1,9 @@
-import { MailInterface } from "./client";
+import { Mail } from "./client";
 
-const mailInterface = new MailInterface(document.getElementById("root"));
+const mail = new Mail(document.getElementById("root"));
 
 const allMessagesButton = document.querySelector(".allMessagesBtn");
 const unreadMessagesButton = document.querySelector(".unreadMessagesBtn");
 
-allMessagesButton.addEventListener("click", () => mailInterface.getMessages());
-unreadMessagesButton.addEventListener("click", () =>
-  mailInterface.getMessages(true),
-);
+allMessagesButton.addEventListener("click", () => mail.getMessages());
+unreadMessagesButton.addEventListener("click", () => mail.getMessages(true));

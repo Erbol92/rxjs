@@ -7,7 +7,7 @@ import {
 } from "rxjs/operators";
 import { fromEvent, interval, of } from "rxjs";
 
-export class MailInterface {
+export class Mail {
   constructor(element) {
     this.element = element;
     this.readedUids = new Set();
